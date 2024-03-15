@@ -54,10 +54,9 @@ python run_experiment/run_experiment.py -h
 
 # 5. Run on Notebook:
 The run_experiment folder also contains a Jupyter Notebook which can be run on Colab. it shows an example on how to run the diffusion. Remember to create an environment first via:
-'''
+```
 !pip install --user virtualenv
 !virtualenv /content/drive/MyDrive/colab_env
-
-'''
+```
 
 
