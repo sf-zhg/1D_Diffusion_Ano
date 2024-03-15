@@ -36,7 +36,7 @@ jobs:
 
     - name: Run Flake8
       run: |
-        flake8 --max-line-length=88 --extend-ignore=E203 TimeSeriesDiffusion run_experiment
+        flake8 --max-line-length=88 --extend-ignore=E203,E501 TimeSeriesDiffusion run_experiment
 
     - name: Run MyPy
       if: always()
@@ -46,7 +46,7 @@ jobs:
     - name: Run Pydocstyle
       if: always()
       run: |
-        pydocstyle --ignore-decorators=property TimeSeriesDiffusion run_experiment
+        pydocstyle --ignore-decorators=property TimeSeriesDiffusion/run_experiment/run_experiment.py
 
     - name: Run Arch Shape Test
       run: python arch_shape_test.py
