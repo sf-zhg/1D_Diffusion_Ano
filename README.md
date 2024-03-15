@@ -2,7 +2,7 @@
 
 # 1. Download this Repository:
 ```
-git clone https://github.com/sf-zhg/APPLIED_DL.git
+git clone https://github.com/sf-zhg/1D_Diffusion_Ano.git
 cd APPLIED_DL
 ```
 # 2. Create a virtual environment:
@@ -20,10 +20,7 @@ conda install --file requirements.txt
 ```
 Note that ```source activate``` does not work on WindowsOS and has to be substituted by ```conda activate```
 
-# 3. Repo description needed?
-xyz.py - functions for abc
-
-# 4. Generate synthetic time series data:
+# 3. Generate synthetic time series data:
 
 After installing the dependencies, one needs to generate a synthetic sine wave dataset. For that one can run:
 ```
@@ -43,7 +40,7 @@ The test and train datasets are then saved in a new folder raw_data_csv with the
 python synth_sine_series.py -h
 ```
 
-# 5. Train and evaluate the model:
+# 4. Train and evaluate the model:
 
 Now one can train and evaluate the anomaly detection and diffusion model simultaneously with the run_experiment script.
 The run_experiment.py script provides an easy sample on how to use the repository in its entirety. Simple run:
@@ -55,5 +52,12 @@ Again, use the help function for different training and inference specification.
 python run_experiment/run_experiment.py -h
 ```
 
+# 5. Run on Notebook:
+The run_experiment folder also contains a Jupyter Notebook which can be run on Colab. it shows an example on how to run the diffusion. Remember to create an environment first via:
+'''
+!pip install --user virtualenv
+!virtualenv /content/drive/MyDrive/colab_env
+
+'''
 
 
