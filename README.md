@@ -3,7 +3,7 @@
 # 1. Download this Repository:
 ```
 git clone https://github.com/sf-zhg/1D_Diffusion_Ano.git
-cd APPLIED_DL
+cd 1D_Diffusion_Ano
 ```
 # 2. Create a virtual environment:
 create a virtual environment for to run this repository on and install dependencies. 
@@ -24,7 +24,7 @@ Note that ```source activate``` does not work on WindowsOS and has to be substit
 
 After installing the dependencies, one needs to generate a synthetic sine wave dataset. For that one can run:
 ```
-python data/synth_data/synth_sine_series.py --amp=[0,5] /
+python TimeSeriesDiffusion/data/synth_data/synth_sine_series.py --amp=[0,5] /
  --freq=[0,5] /
  --phi=[0,5] /
  --samp_rate=10 /
